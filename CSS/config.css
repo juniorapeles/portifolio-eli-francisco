@@ -1,0 +1,39 @@
+:root {
+    --fontSignature: 'Cedarville Cursive', cursive;
+    --fontDestaque: 'Roboto Slab', serif;
+    --fontAll: 'Quicksand', sans-serif;
+    --gray: #a0a0a0;
+    --black: #3f3f3f;
+    --blue: #4682b4;
+    --brown: #824d34;
+    --veryBlack: #000;
+    --smoke: #f5f5f5;
+    --green:#419f60;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    overflow-y: hidden; 
+    overflow-x: auto; 
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--veryBlack);
+    color: var(--smoke);
+    font-style: var(--fontAll);
+}
+
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;300;600;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap');

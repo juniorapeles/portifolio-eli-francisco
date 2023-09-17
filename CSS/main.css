@@ -1,0 +1,25 @@
+main{
+    display: flex;
+    flex-direction: column;
+}
+main div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5.9rem;
+    margin-bottom: 3rem;   
+}
+
+main>div p{
+    color: var(--blue);
+    font-size: 1.2rem;
+}
+main>div p span{
+    color: var(--green);
+    text-decoration: underline;
+}
+main>div img{
+    border-radius: 50%;
+    width: 25%;
+}
+
