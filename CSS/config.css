@@ -3,12 +3,20 @@
     --fontDestaque: 'Roboto Slab', serif;
     --fontAll: 'Quicksand', sans-serif;
     --gray: #a0a0a0;
-    --black: #3f3f3f;
+    --black: #000;
     --blue: #4682b4;
     --brown: #824d34;
-    --veryBlack: #000;
     --smoke: #f5f5f5;
-    --green:#419f60;
+    --green: #419f60;
+}
+
+#projeto {
+    transition: opacity 0.3s ease-in-out;
+    opacity: 1;
+}
+
+#projeto.saindo {
+    opacity: 0;
 }
 
 html {
@@ -16,8 +24,8 @@ html {
 }
 
 body {
-    overflow-y: hidden; 
-    overflow-x: auto; 
+    overflow-y: hidden;
+    overflow-x: auto;
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -26,7 +34,6 @@ body {
     color: var(--smoke);
     font-style: var(--fontAll);
 }
-
 
 * {
     padding: 0px;

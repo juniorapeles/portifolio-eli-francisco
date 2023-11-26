@@ -6,17 +6,23 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: var(--black);
+    background-color: var(--smoke);
 }
 header a {
     text-decoration: none;
-    color: var(--smoke);
+    color: var(--black);
     font-style: var(--fontAll);
     font-size: 1.3rem;
     font-weight: 300;
+    border: 2px solid var(--smoke);
+    border-radius: 100%;
+    padding:8px;
 }
 header a:hover {
-    color: var(--brown);
+    color: var(--smoke);
+    border: 2px solid var(--black);
+    background-color: var(--black);
+    border-radius: 100px;
 }
 header>nav ul li {
     display: inline;

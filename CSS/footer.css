@@ -19,14 +19,17 @@ footer a {
     font-style: var(--fontAll);
     font-size: 1.3rem;
     font-weight: 300;
-    padding: 0.3rem   ;
-    border: solid var(--smoke);
+    border: 2px solid var(--smoke);
+    border-radius: 100%;
+    padding:8px;
 }
 footer>div ul li img {
     width: 3%;
 }
 footer li a:hover{
-    border: solid var(--blue);
-    border-radius: 7px;
+    color: var(--smoke);
+    border: 2px solid var(--black);
+    background-color: var(--black);
+    border-radius: 100px;
 }
 

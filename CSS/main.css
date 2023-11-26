@@ -2,6 +2,7 @@ main{
     display: flex;
     flex-direction: column;
 }
+
 main div{
     display: flex;
     align-items: center;
@@ -11,11 +12,14 @@ main div{
 }
 
 main>div p{
-    color: var(--blue);
+    color: var(--black);
     font-size: 1.2rem;
+    padding: 3px;
 }
 main>div p span{
-    color: var(--green);
+    color: var(--smoke);
+    background-color: var(--black);
+    padding: 3px;
     text-decoration: underline;
 }
 main>div img{
