@@ -26,8 +26,19 @@ document.addEventListener("DOMContentLoaded", function() {
         e.preventDefault();
 
         const novoConteudo = `
-            <div class="bloco entrando" id="sobre">
-                <h1>Aba de sobre mim</h1>
+            <div class="bloco entrando">
+                <h1>Aba sobre mim</h1>
+            </div>
+            <div class="bloco " id="sobre">
+              
+                <span>
+                    <div class="texto">
+                        <p>Atualmente tenho 18 anos, sou desenvolvedor de software da Itpower Software</p>
+                        <p>Atendo a chamados e Sustain prestando serviços para a empresa Mazars, atuei em projetos desde gerenciamentos de notas fiscais, até Registros humanos, gerenciamentos de documentos e etc.</p>
+                        <p>Tenho experiência sólida com o banco de dados SQL Server.</p>
+                        <p>estou focado estudando Java e procuro oportunidades para trabalhar com a linguagem.</p>
+                    </div>
+                </span>
             </div>
         `;
 
@@ -51,6 +62,9 @@ document.addEventListener("DOMContentLoaded", function() {
         const novoConteudo = `
             <div class="bloco entrando" id="fale">
                 <h1>Aba de Fale Comigo</h1>
+            </div>
+            <div class="bloco">
+                <div class="texto"></div>
             </div>
         `;
 
