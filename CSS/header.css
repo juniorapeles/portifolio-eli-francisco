@@ -4,7 +4,8 @@ header{
 }
 .inicio{
     width: 50%;
-    text-align: center
+    display: flex;
+    justify-content: start;
 }
 header  nav{
     display: flex;

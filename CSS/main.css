@@ -10,6 +10,7 @@ main{
     gap:16px;
     margin-top:1rem;
     padding: 16px;
+    align-items: center;
 }
 
 main div span {
