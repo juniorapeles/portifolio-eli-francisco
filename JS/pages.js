@@ -1,58 +1,70 @@
-document.getElementById('projetos-link').addEventListener('click', function(e) {
-    e.preventDefault();
+document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById('projetos-link').addEventListener('click', function(e) {
+        e.preventDefault();
 
-    // Novo conteúdo a ser exibido
-    const novoConteudo = `
-        <div>
-            <h2>Novo Título</h2>
-        </div>
-        <div>
-            
-        </div>
-        <div>
-            <p>Este é um novo conteúdo.</p>
-        </div>
-    `;
+        const novoConteudo = `
+            <div class="bloco entrando" id="projetos">
+                <h1>Aba de projetos</h1>
+            </div>
+        `;
 
-    const projeto = document.getElementById('projeto');
+        const main = document.querySelector("main");
 
-    // Adicionando classe para acionar a transição de saída
-    projeto.classList.add('saindo');
-    setTimeout(() => {
-        // Substituindo o conteúdo dentro da main pelo novoConteudo
-        projeto.innerHTML = novoConteudo;
+        main.classList.add('saindo');
+        setTimeout(() => {
+            main.innerHTML = novoConteudo;
+            main.classList.remove('saindo');
 
-        // Removendo a classe para iniciar a transição de entrada
-        projeto.classList.remove('saindo');
-    }, 300); // Tempo correspondente à duração da transição (300ms no CSS)
-});
+            setTimeout(() => {
+                const novoBloco = main.querySelector(".bloco");
+                novoBloco.classList.remove('entrando');
+            }, 50);
+        }, 300);
+    });
 
-// Troca do conteúdo quando o ícone de início é clicado
-document.getElementById('inicio-link').addEventListener('click', function(e) {
-    e.preventDefault();
+    document.getElementById('sobre-link').addEventListener('click', function(e) {
+        e.preventDefault();
 
-    // Novo conteúdo para o início
-    const novoInicio = `
-        <div>
-            <h1>Portifolio Web</h1>
-        </div>
-        <div>
-            <img id="minha-foto" src="ASSETS/images/image.jpeg" alt="foto_Junior Apeles O jota">
-        </div>
-        <div>
-            <p>Este é um <span>portifólio</span> feito para demonstração, de minhas habilidades na web.</p>
-        </div>
-    `;
+        const novoConteudo = `
+            <div class="bloco entrando" id="sobre">
+                <h1>Aba de sobre mim</h1>
+            </div>
+        `;
 
-    const projeto = document.getElementById('projeto');
+        const main = document.querySelector("main");
 
-    // Adicionando classe para acionar a transição de saída
-    projeto.classList.add('saindo');
-    setTimeout(() => {
-        // Substituindo o conteúdo dentro da main pelo novoConteudo
-        projeto.innerHTML = novoInicio;
+        main.classList.add('saindo');
+        setTimeout(() => {
+            main.innerHTML = novoConteudo;
+            main.classList.remove('saindo');
 
-        // Removendo a classe para iniciar a transição de entrada
-        projeto.classList.remove('saindo');
-    }, 300); // Tempo correspondente à duração da transição (300ms no CSS)
+            setTimeout(() => {
+                const novoBloco = main.querySelector(".bloco");
+                novoBloco.classList.remove('entrando');
+            }, 50);
+        }, 300);
+    });
+
+    document.getElementById('fale-link').addEventListener('click', function(e) {
+        e.preventDefault();
+
+        const novoConteudo = `
+            <div class="bloco entrando" id="fale">
+                <h1>Aba de Fale Comigo</h1>
+            </div>
+        `;
+
+        const main = document.querySelector("main");
+
+        main.classList.add('saindo');
+        setTimeout(() => {
+            main.innerHTML = novoConteudo;
+            main.classList.remove('saindo');
+
+            setTimeout(() => {
+                const novoBloco = main.querySelector(".bloco");
+                novoBloco.classList.remove('entrando');
+            }, 50);
+        }, 300);
+    });
 });

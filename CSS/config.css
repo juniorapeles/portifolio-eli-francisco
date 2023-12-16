@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;300;600;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap');
 :root {
     --fontSignature: 'Cedarville Cursive', cursive;
     --fontDestaque: 'Roboto Slab', serif;
@@ -10,17 +13,9 @@
     --green: #419f60;
 }
 
-#projeto {
-    transition: opacity 0.3s ease-in-out;
-    opacity: 1;
-}
-
-#projeto.saindo {
-    opacity: 0;
-}
-
 html {
     font-size: 16px;
+    color:white;
 }
 
 body {
@@ -30,17 +25,28 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    background-color: var(--veryBlack);
-    color: var(--smoke);
     font-style: var(--fontAll);
+    
+    background-color: #000;
 }
 
 * {
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+    font-size:1rem; 
+
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;300;600;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap');
+main{
+
+}
+
+header{
+
+}
+
+footer{
+
+}
+

@@ -9,48 +9,51 @@
     <link rel="stylesheet" href="CSS/main.css">
     <link rel="stylesheet" href="CSS/footer.css">
     <style>
-     
+            
     </style>
 </head>
 <body>
     <header>
-        <div>
-            <a href="#" id="inicio-link">Inicio</a>
+        <div class="inicio">
+            <a class="underline-from-left" href="./index.html" id="inicio-link">Inicio</a>
         </div>
         <nav>
-            <ul>
-                <li><a href="/" id="projetos-link">Projetos</a></li>
-                <li><a href="/">Sobre</a></li>
-                <li><a href="/">Fale Comigo</a></li>
-            </ul>
+            <span><a class="underline-from-left" id="projetos-link">Projetos</a></span>
+            <span><a class="underline-from-left" id="sobre-link">Sobre</a></span>
+            <span><a class="underline-from-left" id="fale-link">Fale Comigo</a></span>
         </nav>
+        
     </header>
-    <main id="projeto">
-        <div>
-            <h1>Portifolio Web</h1>
-        </div>
-        <div>
-            <img id="minha-foto" src="ASSETS\images\image.jpeg" alt="foto_Junior Apeles O jota">
-        </div>
-        <div>
-            <p>Este é um <span>portifólio</span> feito para demonstração, de minhas habilidades na web.</p>
+    <main>
+        <div class="bloco" id="inicio">
+            <span class="img">
+                <img src="/portifolio-eli-francisco/ASSETS/images/image.jpeg" alt="foto_eli">
+            </span>
+            <span>
+                <div class="texto">
+                    <p>Sou Eli Francisco, desenvolvedor de software especializado em sistemas da informação.</p>
+                    <p>Confira minhas redes sociais abaixo e meus projetos na seção "Projetos".</p>
+                    <p>Caso queira saber mais sobre mim, pode acessar a seção sobre.</p>
+                </div>
+                <div class="texto">
+                    <p>Entre em contato comigo na seção "Fale Comigo" acima.</p>
+                </div>
+            </span>
         </div>
     </main>
     <footer>
         <div>
-            <ul>
-                <li>
-                    <a target="_blank" class="linkedin" href="https://www.linkedin.com/in/develi/">LinkedIn</a>
-                </li>
-                <li>
-                    <a target="_blank" class="github" href="https://github.com/juniorapeles">Github</a>
-                </li>
-                <li>
-                    <a target="_blank" class="instagram" href="https://instagram.com/jotaapeles?igshid=OGQ5ZDc2ODk2ZA==">Instagram</a>
-                </li>
-            </ul>
+            <span>
+                <a target="_blank" class="linkedin" href="https://www.linkedin.com/in/develi/">LinkedIn</a>
+            </span>
+            <span>
+                <a target="_blank" class="github" href="https://github.com/juniorapeles">Github</a>
+            </span>
+            <span>
+                <a target="_blank" class="instagram" href="https://instagram.com/jotaapeles?igshid=OGQ5ZDc2ODk2ZA==">Instagram</a>
+            </span>
         </div>
     </footer>
-    <script src="JS\pages.js"></script>
+    <script src="./JS/pages.js"></script>
 </body>
 </html>

@@ -1,29 +1,52 @@
 main{
     display: flex;
     flex-direction: column;
-}
-
-main div{
-    display: flex;
-    align-items: center;
     justify-content: center;
-    margin-top: 5.9rem;
-    margin-bottom: 3rem;   
+    align-items: center;
 }
 
-main>div p{
-    color: var(--black);
-    font-size: 1.2rem;
-    padding: 3px;
-}
-main>div p span{
-    color: var(--smoke);
-    background-color: var(--black);
-    padding: 3px;
-    text-decoration: underline;
-}
-main>div img{
-    border-radius: 50%;
-    width: 25%;
+.bloco{
+    display: flex;
+    gap:16px;
+    margin-top:1rem;
+    padding: 16px;
 }
 
+main div span {
+ align-items: center;
+ width: 50%;
+}
+
+.texto{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    border-left: solid white 5px;
+}
+
+img {
+    width: 30%; /* A imagem ocupará 100% da largura do contêiner */
+    height: auto; /* A altura será ajustada automaticamente para manter a proporção */
+    display: block; /* Remove espaços em branco causados pela exibição inline */
+    border-radius: 100%;
+}
+.img{
+    display: flex;
+    justify-content: center;
+}
+
+.bloco {
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.saindo {
+    opacity: 0;
+}
+
+.entrando {
+    opacity: 0;
+}
