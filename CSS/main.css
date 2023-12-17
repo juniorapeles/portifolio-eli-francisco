@@ -19,6 +19,10 @@ main div span {
 }
 
 .texto{
+    width: 100%;
+}
+
+.texto{
     margin-top: 1rem;
     display: flex;
     flex-direction: column;
