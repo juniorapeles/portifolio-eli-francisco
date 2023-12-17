@@ -14,7 +14,8 @@ header  nav{
     justify-content: space-evenly;
 
 }
-a{
+a{  
+  cursor: pointer;
     color: white;
     font: var(--fontAll);
     font-size: 1.5rem;
