@@ -1,16 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Eli Francisco</title>
-    <link rel="stylesheet" href="CSS/config.css">
-    <link rel="stylesheet" href="CSS/header.css">
-    <link rel="stylesheet" href="CSS/main.css">
-    <link rel="stylesheet" href="CSS/footer.css">
+    <link rel="stylesheet" href="/portifolio-eli-francisco/CSS/header.css">
+    <link rel="stylesheet" href="/portifolio-eli-francisco/CSS/footer.css">
+    <link rel="stylesheet" href="/portifolio-eli-francisco/CSS/main.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+
 </head>
 <body>
     <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Portifólio</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" onclick="mudaFrame('home')">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" onclick="mudaFrame('projetos')">Projetos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" onclick="mudaFrame('contato')">Contato</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        <!---
         <div class="inicio">
             <a class="underline-from-left" href="./index.html" id="inicio-link">Inicio</a>
         </div>
@@ -19,20 +43,80 @@
             <span><a class="underline-from-left" id="sobre-link">Sobre</a></span>
             <span><a class="underline-from-left" id="fale-link">Contato</a></span>
         </nav>
+    --->
     </header>
     <main>
-        <div class="bloco" id="inicio">
-            <span class="img">
-                <img src="/portifolio-eli-francisco/ASSETS/images/image.jpeg" alt="foto_eli">
+       
+        <div class="container content animacao homeSection">
+            <h2>Desenvolvedor Backend</h2>
+        </div>
+        
+        <div class="container content animacao homeSection">
+            <div>
+                <img id="imgNN" src="./ASSETS/images/image.jpeg" class="float-start" alt="...">
+            </div>
+            <div class="text">
+                <h2>Seja Bem vindo ao meu Portifólio.</h2>
+                <p>Meu Nome é Eli Francisco.</p> 
+                <p>Atualmente sou Desenvolvedor de Software para itpower Software.</p>
+                <p>Sou desenvolvedor backend na linguegem Java e possuo experiência em Cruds, modelagem de dados e testes unitários.</p>
+            </div>
+        </div>
+      
+      
+
+        <div class="container content animacao homeSection">
+            <div class="texto">
+                <h2>Habilidades</h2>
+            </div>
+            <span class="spans">
+                    <span>Coldfusion</span>
+                    <span>SqlServer</span>
+                    <span>HTML/CSS/Bootstrap</span>
+                    <span>Java</span>
+                    <span>Spring</span>
+                    <span>Jpa</span>
+                    <span>JUnit</span>
+                    <span>Mockito</span>
+               
             </span>
-            <span>
-                <div class="texto">
-                    <p><strong style="font-size: 1.2em;">Sou Eli Francisco, desenvolvedor de software especializado em sistemas da informação.</strong></p>
-                    <p><em>Confira minhas redes sociais abaixo e meus projetos na seção "Projetos".</em></p>
-                    <p><strong style="color: #fff;">Caso queira saber mais sobre mim, pode acessar a seção sobre.</strong></p>
-                    <p style="text-transform: uppercase;"><strong>Entre em Contato comigo na seção "Contato" acima.</strong></p>
+        </div>
+
+        <div class="container content" id="projetosSection" style="display: none;">
+            <div>
+                <img src="./ASSETS/images/pilha-de-tres-livros.png" class="float-start" alt="...">
+            </div>
+           
+           
+                
+                <div class="text">
+                    <h2>Principais Recursos:</h2>
+                    <p>House Of Books(Em DEV)</p>
+                    <ul>
+                        <li><strong>Livros:</strong> Permite a manipulação de informações sobre os livros, incluindo nome, data de publicação, descrição e associação a autores, categorias e editoras.</li>
+                        <li><strong>Autores:</strong> Oferece funcionalidades para gerenciar autores, como adicionar novos autores, listar informações dos autores e associar autores aos livros.</li>
+                        <li><strong>Categorias:</strong> Gerencia as categorias disponíveis para os livros, permitindo a criação, remoção e atualização de categorias, além de associar livros a categorias específicas.</li>
+                    </ul>
                 </div>
-            </span>
+                <h2>Funcionalidades Adicionais:</h2>
+                <ul>
+                    <li>Pesquisa de livros por nome, autor ou categoria.</li>
+                    <li>Filtragem e ordenação dos resultados das consultas.</li>
+                    <li>Autenticação e autorização para proteção de operações ou dados sensíveis.</li>
+                </ul>
+                
+                <p>A API é construída com tecnologias como Spring Boot, Hibernate e possivelmente integrações com bancos de dados como H2, PostgreSQL, entre outros.</p>
+            
+        </div>
+        
+        <div class="container content" id="contatoSection" style="display: none;">
+            <div class="text">  
+                <h2>Entre em contato comigo!</h2>
+                <ul>
+                    <li>Siga-me no: <a target="_blank" class="linkedin" href="https://www.linkedin.com/in/develi/">LinkedIn</a></li>
+                    <li>Email:<a href="mailto:elijunior.apeles2005@gmail.com"> elijunior.apeles@gmail.com</a></li>
+                </ul>
+            </div> 
         </div>
     </main>
     <footer>
@@ -44,10 +128,18 @@
                 <a target="_blank" class="github" href="https://github.com/juniorapeles">Github</a>
             </span>
             <span>
-                <a target="_blank" class="instagram" href="https://www.instagram.com/junior.cfm_/">Instagram</a>
+                <a target="_blank" class="instagram" href="https://www.instagram.com/junior.apeles/">Instagram</a>
             </span>
         </div>
     </footer>
     <script src="./JS/pages.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+        const elementosAnimar = document.querySelectorAll('.animacao');
+        elementosAnimar.forEach(function(elemento) {
+            elemento.classList.add('aparecer');
+        });
+    });
+    </script>
 </body>
 </html>
