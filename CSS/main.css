@@ -46,11 +46,16 @@ img{
     transform: translateY(0);
 }
 
-.spans{
-    display:flex;
-    justify-content: space-between;
+.spans {
     display: flex;
     justify-content: space-between;
+    gap: 16px;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
     gap: 16px;
 }
 
