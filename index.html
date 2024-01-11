@@ -8,9 +8,14 @@
     <link rel="stylesheet" href="/portifolio-eli-francisco/CSS/footer.css">
     <link rel="stylesheet" href="/portifolio-eli-francisco/CSS/main.css">
 
+  
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
         crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-9n5EjPBjqiHbWJR5P4lXasAe6/RKj7f5yZrvTfvw4/0="
+        crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>
@@ -18,25 +23,28 @@
 </head>
 
 <body>
-    <header>
+    <header class="text-center">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">Portifólio</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" onclick="mudaFrame('home')">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" onclick="mudaFrame('projetos')">Projetos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" onclick="mudaFrame('contato')">Contato</a>
-                    </li>
-                </ul>
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Portifólio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" onclick="mudaFrame('home')">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" onclick="mudaFrame('projetos')">Projetos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" onclick="mudaFrame('contato')">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+                <button class="btn btn-dark ml-auto" onclick="toggleDarkMode()">Modo Escuro</button>
             </div>
         </nav>
     </header>
@@ -115,7 +123,8 @@
             <div class="text">
                 <h2>Entre em contato comigo!</h2>
                 <ul>
-                    <li>Siga-me no: <a target="_blank" class="linkedin" href="https://www.linkedin.com/in/develi/">LinkedIn</a></li>
+                    <li>Siga-me no: <a target="_blank" class="linkedin"
+                            href="https://www.linkedin.com/in/develi/">LinkedIn</a></li>
                     <li>Email:<a href="mailto:elijunior.apeles2005@gmail.com"> elijunior.apeles@gmail.com</a></li>
                 </ul>
             </div>
@@ -134,15 +143,12 @@
             </span>
         </div>
     </footer>
-    <script src="./JS/pages.js"></script>
     <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const elementosAnimar = document.querySelectorAll('.animacao');
-            elementosAnimar.forEach(function (elemento) {
-                elemento.classList.add('aparecer');
-            });
-        });
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+        }
     </script>
+    <script src="./JS/pages.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5lQW9icqjEaEke2WgPGyoM3DCvxU0lYUA4="
         crossorigin="anonymous"></script>
@@ -152,6 +158,14 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
         integrity="sha384-pzjw8s+orFlfip3gRKSrTRuqL6bJQjQG7cdN6z5PZlTfIIQFa3F2lkpmnTGALgo9"
         crossorigin="anonymous"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const elementosAnimar = document.querySelectorAll('.animacao');
+            elementosAnimar.forEach(function (elemento) {
+                elemento.classList.add('aparecer');
+            });
+        });
+    </script>
 </body>
 
 </html>

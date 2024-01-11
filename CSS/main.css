@@ -65,3 +65,17 @@ img{
     padding: 20px; 
     border-radius: 8px;
 }
+
+body.dark-mode {
+    background-color: #1a1a1a; 
+}
+body {
+    transition: background-color 0.5s ease; 
+    color: #333; 
+}
+
+body.dark-mode {
+    background-color: #1a1a1a; 
+    
+}
+
