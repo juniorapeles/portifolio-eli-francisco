@@ -1,35 +1,36 @@
-# Portfolio do Desenvolvedor Fullstack 🚀
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Sobre Mim
-Olá! 👋 Sou um jovem apaixonado por desenvolvimento web, com 18 anos e uma vasta experiência em construir soluções digitais. Estou atualmente focado em aprimorar minhas habilidades em Java com Spring, visando uma carreira sólida no mercado de trabalho.
+## Getting Started
 
-## Redes Sociais 🌍
-- **LinkedIn**: [Perfil LinkedIn](https://www.linkedin.com/in/develi/) 📎
-- **GitHub**: [GitHub Profile](https://github.com/juniorapeles) 🛠️
-- **Instagram**: [Perfil Instagram](https://instagram.com/jotaapeles?igshid=OGQ5ZDc2ODk2ZA==) 📸
+First, run the development server:
 
-## Projetos Destacados 🏆
-Aqui estão alguns dos projetos que desenvolvi recentemente e que demonstram minhas habilidades como desenvolvedor fullstack:
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-### 1. Sistema de Gerenciamento de Tarefas
-Um aplicativo web que permite aos usuários organizar suas tarefas diárias, definir prioridades e acompanhar o progresso. Desenvolvido utilizando HTML, CSS, JavaScript e integração com um backend em Java.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-### 2. Blog Pessoal
-Um blog dinâmico onde os usuários podem criar, editar e excluir postagens. O frontend foi construído com Angular, enquanto o backend utilizou Java e Express para gerenciar os dados.
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-### 3. Aplicativo de E-Commerce
-Uma plataforma de comércio eletrônico que oferece uma variedade de produtos aos usuários. Desenvolvido com tecnologias como Angular para o frontend e Java para o backend, além de integração com banco de dados MongoDB.
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Habilidades Técnicas 🛠️
-- **Linguagens**: JavaScript, HTML, CSS, Java, coldfusion, php
-- **Frameworks e Bibliotecas**: React.js, Angular, Spring Framework
-- **Banco de Dados**: MongoDB, MySQL, SqlServer
-- **Controle de Versão**: Git
+## Learn More
 
-## Educação 🎓
-Atualmente, estou dedicando tempo para me aprimorar em Java com Spring, além de continuar meu aprendizado em desenvolvimento web por meio de cursos online e projetos práticos.
+To learn more about Next.js, take a look at the following resources:
 
-## Contato 📬
-Sinta-se à vontade para entrar em contato comigo através do LinkedIn, GitHub ou Instagram para discutir colaborações, oportunidades de trabalho ou apenas para trocar ideias sobre tecnologia! Estou sempre aberto a novas conexões e desafios.
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-Obrigado por visitar meu portfólio! 😊
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
