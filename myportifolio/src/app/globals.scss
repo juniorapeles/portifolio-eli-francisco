@@ -1,9 +1,8 @@
 :root {
   --text-primary: white;
   --text-secondary: #B3B3B3;
-  --bg-primary: #2c2c2c;
+  --bg-primary: #2C2C2C;
 }
-
 
 * {
   box-sizing: border-box;
@@ -20,5 +19,3 @@ body {
 body {
   background-color: var(--bg-primary);
 }
-
-
