@@ -1,12 +1,12 @@
 
 
-import About from './components/about/About'
-import Header from './components/header/Header'
-import Hero from './components/hero/Hero'
+import About from './components/About/About'
+import Header from './components/Header/Header'
+import Hero from './components/Hero/Hero'
 import Projects from './components/Projects/Projects'
 import Footer from './components/Footer/Footer'
 import styles from '../styles/Home.module.scss'
-import Contact from './components/contact/Contact'
+import Contact from './components/Contact/Contact'
 export default function Home() {
   return (
     <div className={styles.app}>
