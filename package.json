@@ -3,7 +3,7 @@
   "name": "myportifolio",
   "version": "0.1.0",
   "scripts": {
-    "dev": "npm run dev",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
