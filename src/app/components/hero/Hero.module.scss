@@ -1,0 +1,36 @@
+
+.hero {
+  padding: 4rem 2rem;
+  background: #0E0E0E;
+  text-align: center;
+
+  h1 {
+    color: #FFFFFF;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+
+    span { // Para o nome "Júnior" se quiser destacar
+      color: #046BD2;
+    }
+  }
+
+  p {
+    color: #A1A1A1;
+    font-size: 1.25rem;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 768px) {
+    padding: 3rem 1rem;
+    
+    h1 {
+      font-size: 2rem;
+    }
+    
+    p {
+      font-size: 1rem;
+    }
+  }
+}

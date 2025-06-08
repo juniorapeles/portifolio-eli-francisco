@@ -1,0 +1,33 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  position: relative;
+
+  &Main {
+    flex: 1;
+    padding-top: 80px; /* Compensar o header fixo */
+  }
+
+  .section {
+    min-height: calc(100vh - 80px); /* Ajuste para altura total */
+    padding: 4rem 2rem;
+    scroll-margin-top: 80px; /* Alinhamento do scroll */
+
+    &:first-child {
+      padding-top: 2rem; /* Menos espaço no topo do Hero */
+    }
+  }
+}
+
+/* Versão mobile */
+@media (max-width: 768px) {
+  .app {
+    &Main {
+      .section {
+        padding: 3rem 1rem;
+        min-height: auto;
+      }
+    }
+  }
+}

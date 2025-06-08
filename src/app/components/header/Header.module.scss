@@ -1,0 +1,41 @@
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0E0E0E;
+  z-index: 1000;
+
+  .logo {
+    color: #046BD2;
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+
+  .nav {
+    display: flex;
+    gap: 1.5rem;
+
+    &Link {
+      color: #A1A1A1;
+      background: none;
+      border: none;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: color 0.3s;
+      padding: 0.5rem;
+
+      &:hover {
+        color: #FFFFFF;
+      }
+
+      &.active {
+        color: #FFFFFF;
+        font-weight: bold;
+      }
+    }
+  }
+}

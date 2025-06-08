@@ -1,7 +1,9 @@
 :root {
-  --text-primary: white;
-  --text-secondary: #B3B3B3;
-  --bg-primary: #2C2C2C;
+  --text-primary: #FFFFFF;
+  --text-secondary: #A1A1A1;
+  --bg-primary: #0E0E0E;
+  --accent-color: #046BD2;
+  --card-bg: #1A1A1A;
 }
 
 * {
@@ -10,12 +12,19 @@
   margin: 0;
 }
 
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: inherit; // A fonte será aplicada pelo Next.js
+  padding-top: 80px; // Espaço para o header fixo
+}
+
+section {
+  min-height: 100vh;
+  padding: 2rem;
+  scroll-margin-top: 80px; // Ajuste para o scroll suave com header fixo
 }
