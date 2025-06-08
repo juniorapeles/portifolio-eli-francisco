@@ -1,0 +1,91 @@
+.contact {
+  background-color: #1A1A1A;
+  padding: 4rem 2rem;
+  scroll-margin-top: 80px;
+
+  h2 {
+    color: #FFFFFF;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  .contactContent {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .emailBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+
+    .icon {
+      font-size: 2.5rem;
+      color: #046BD2;
+    }
+
+    .emailLink {
+      background: #046BD2;
+      color: white;
+      padding: 1rem 2rem;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.3s;
+      display: inline-block;
+
+      &:hover {
+        background: darken(#046BD2, 10%);
+      }
+    }
+
+    p {
+      color: #A1A1A1;
+      margin-top: 1rem;
+    }
+  }
+
+  .socialLinks {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .socialLink {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    color: #A1A1A1;
+    text-decoration: none;
+    transition: color 0.3s;
+
+    &:hover {
+      color: #FFFFFF;
+    }
+  }
+
+  .socialIcon {
+    font-size: 2rem;
+    color: #FFFFFF;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact {
+    padding: 3rem 1rem;
+
+    .socialLinks {
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+  }
+}

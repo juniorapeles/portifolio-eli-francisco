@@ -1,4 +1,3 @@
-
 .hero {
   padding: 4rem 2rem;
   background: #0E0E0E;
@@ -9,10 +8,6 @@
     font-size: 2.5rem;
     margin-bottom: 1rem;
     line-height: 1.2;
-
-    span { // Para o nome "Júnior" se quiser destacar
-      color: #046BD2;
-    }
   }
 
   p {
@@ -20,15 +15,16 @@
     font-size: 1.25rem;
     max-width: 600px;
     margin: 0 auto;
+    min-height: 2rem; /* para evitar pular layout quando troca o texto */
   }
 
   @media (max-width: 768px) {
     padding: 3rem 1rem;
-    
+
     h1 {
       font-size: 2rem;
     }
-    
+
     p {
       font-size: 1rem;
     }

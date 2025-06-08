@@ -1,41 +1,16 @@
-// Projects.module.scss
-.projects {
-  padding: 2rem;
-  background: #0E0E0E;
-  color: #FFFFFF;
-
-  h2 {
-    color: #FFFFFF;
-    margin-bottom: 2rem;
-  }
-}
-
-.card {
+// components/Footer/Footer.module.scss
+.footer {
   background: #1A1A1A;
-  padding: 1.5rem;
-  border-radius: 8px;
-  margin-bottom: 1rem;
-
-  h3 {
-    color: #FFFFFF;
+  padding: 2rem;
+  text-align: center;
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
   }
 
   p {
     color: #A1A1A1;
-  }
-}
-
-.buttons {
-  display: flex;
-  gap: 1rem;
-  margin-top: 1rem;
-
-  button {
-    background: #046BD2;
-    color: #FFFFFF;
-    border: none;
-    padding: 0.5rem 1rem;
-    border-radius: 4px;
-    cursor: pointer;
+    font-size: 0.9rem;
   }
 }

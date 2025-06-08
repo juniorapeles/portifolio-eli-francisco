@@ -13,11 +13,21 @@
     color: #046BD2;
     font-weight: bold;
     font-size: 1.5rem;
+    
+    // Esconde o logo em telas menores que 768px
+    @media (max-width: 768px) {
+      display: none;
+    }
   }
 
   .nav {
     display: flex;
     gap: 1.5rem;
+
+    // Centraliza a navegação quando o logo está escondido
+    @media (max-width: 768px) {
+      margin: 0 auto;
+    }
 
     &Link {
       color: #A1A1A1;
@@ -39,3 +49,4 @@
     }
   }
 }
+

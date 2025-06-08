@@ -1,4 +1,3 @@
-
 'use client'
 
 import { useEffect, useState } from 'react'
@@ -9,8 +8,8 @@ export default function Header() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['home', 'projetos', 'sobre']
-      const scrollPosition = window.scrollY + 100
+      const sections = ['home', 'projetos', 'sobre', 'contato']
+      const scrollPosition = window.scrollY + window.innerHeight / 2
 
       for (const section of sections) {
         const element = document.getElementById(section)
@@ -18,7 +17,10 @@ export default function Header() {
           const offsetTop = element.offsetTop
           const offsetHeight = element.offsetHeight
 
-          if (scrollPosition >= offsetTop && scrollPosition < offsetTop + offsetHeight) {
+          if (
+            scrollPosition >= offsetTop &&
+            scrollPosition < offsetTop + offsetHeight
+          ) {
             setActiveSection(section)
             break
           }
@@ -27,15 +29,19 @@ export default function Header() {
     }
 
     window.addEventListener('scroll', handleScroll)
+    handleScroll() // ativa já na primeira renderização
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId)
+    const header = document.querySelector(`.${styles.header}`) as HTMLElement
+    const headerHeight = header ? header.offsetHeight : 80
+
     if (element) {
       window.scrollTo({
-        top: element.offsetTop - 80,
-        behavior: 'smooth'
+        top: element.offsetTop - headerHeight,
+        behavior: 'smooth',
       })
     }
   }
@@ -43,9 +49,9 @@ export default function Header() {
   return (
     <header className={styles.header}>
       <div className={styles.logo}>Eli Francisco</div>
-      
+
       <nav className={styles.nav}>
-        {['home', 'projetos', 'sobre'].map((section) => (
+        {['home', 'projetos', 'sobre', 'contato'].map((section) => (
           <button
             key={section}
             onClick={() => scrollToSection(section)}
