@@ -2,7 +2,7 @@
 
 import About from './components/about/About'
 import Header from './components/header/header'
-import Footer from './components/footerr/Footer'
+
 import Hero from './components/hero/Hero'
 import Projects from './components/Projects/Projects'
 import styles from '../styles/Home.module.scss'
@@ -35,7 +35,7 @@ export default function Home() {
         </section>
       </main>
       
-      <Footer />
+    
     </div>
   )
 }
