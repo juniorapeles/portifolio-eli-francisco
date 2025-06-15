@@ -22,7 +22,7 @@ export default function Home() {
           title="House of Books" 
           description="Sistema completo para gerenciamento de livros e editoras, construído com Java 11, Spring Boot e PostgreSQL. Inclui autenticação, CRUD completo, boas práticas RESTful e testes com Insomnia." 
           codeLink="https://github.com/juniorapeles/House-Of-Books"
-          projectLink="https://house-of-books.juniorapeles.xyz/"
+          projectLink="https://library.juniorapeles.xyz/"
         />
       </section>
         
