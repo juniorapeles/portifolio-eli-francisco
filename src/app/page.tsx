@@ -17,16 +17,21 @@ export default function Home() {
           <Hero />
         </section>
         
-      <section id="projetos" className={styles.container}>
+      <section id="projetos" style={{
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'flex-start'
+        }}>
         <Projects 
           title="House of Books" 
           description="Sistema completo para gerenciamento de livros e editoras, construído com Java 11, Spring Boot e PostgreSQL. Inclui autenticação, CRUD completo, boas práticas RESTful e testes com Insomnia." 
           codeLink="https://github.com/juniorapeles/House-Of-Books"
           projectLink="https://library.juniorapeles.xyz/"
         />
+        
       </section>
         
-        <section id="sobre">
+        <section id="sobre" >
           <About />
         </section>
 
