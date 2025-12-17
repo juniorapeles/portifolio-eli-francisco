@@ -1,46 +1,44 @@
+import About from "./components/about/About";
+import Header from "./components/header/header";
 
-
-import About from './components/about/About'
-import Header from './components/header/header'
-
-import Hero from './components/hero/Hero'
-import Projects from './components/Projects/Projects'
-import styles from '../styles/Home.module.scss'
-import Contact from './components/contact/Contact'
+import Hero from "./components/hero/Hero";
+import Projects from "./components/Projects/Projects";
+import styles from "../styles/Home.module.scss";
+import Contact from "./components/contact/Contact";
 export default function Home() {
   return (
     <div className={styles.app}>
       <Header />
-      
+
       <main>
         <section id="home">
           <Hero />
         </section>
-        
-      <section id="projetos" style={{
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'flex-start'
-        }}>
-        <Projects 
-          title="House of Books" 
-          description="Sistema completo para gerenciamento de livros e editoras, construído com Java 11, Spring Boot e PostgreSQL. Inclui autenticação, CRUD completo, boas práticas RESTful e testes com Insomnia." 
-          codeLink="https://github.com/juniorapeles/House-Of-Books"
-          projectLink="https://library.juniorapeles.xyz/"
-        />
-        
-      </section>
-        
-        <section id="sobre" >
+
+        <section
+          id="projetos"
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "flex-start",
+          }}
+        >
+          <Projects
+            title="House of Books"
+            description="Sistema completo para gerenciamento de livros e editoras, construído com Java 11, Spring Boot e PostgreSQL. Inclui autenticação, CRUD completo, boas práticas RESTful e testes com Insomnia."
+            codeLink="https://github.com/juniorapeles/House-Of-Books"
+            projectLink="https://books-react-gs.vercel.app"
+          />
+        </section>
+
+        <section id="sobre">
           <About />
         </section>
 
         <section id="contato">
-          <Contact/>
+          <Contact />
         </section>
       </main>
-      
-    
     </div>
-  )
+  );
 }
